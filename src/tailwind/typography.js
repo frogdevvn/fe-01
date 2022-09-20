@@ -1,4 +1,12 @@
 const getTypography = () => ({
+  /* Typography/Display */
+  '.typo-display': {
+    fontFamily: 'Work Sans',
+    fontWeight: 700,
+    fontSize: '40px',
+    lineHeight: '50px'
+  },
+
   /* Typography/Heading/Bold 1 */
   '.typo-heading-bold-1': {
     fontFamily: 'Crimson Text',
@@ -67,7 +75,6 @@ const getTypography = () => ({
   /* Typography/Body */
   '.typo-body': {
     fontFamily: 'Work Sans',
-    fontWeight: 700,
     fontSize: '15px',
     lineHeight: '18.75px'
   }
