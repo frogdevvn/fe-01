@@ -2,7 +2,11 @@
 
 const { colors: defaultColors } = require('tailwindcss/defaultTheme');
 const tailwindcssRadix = require('tailwindcss-radix');
-const { typographyPlugin, getScreens, getColors } = require('./src/tailwind');
+const {
+  getTypographyPlugin,
+  getScreens,
+  getColors
+} = require('./src/tailwind');
 
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
@@ -24,5 +28,5 @@ module.exports = {
     },
     extend: {}
   },
-  plugins: [tailwindcssRadix(), typographyPlugin]
+  plugins: [tailwindcssRadix(), getTypographyPlugin]
 };

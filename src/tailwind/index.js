@@ -3,7 +3,7 @@ const { getTypography } = require('./typography');
 const { getScreens } = require('./screens');
 const { getColors } = require('./colors');
 
-const typographyPlugin = plugin(({ addComponents }) => {
+const getTypographyPlugin = plugin(({ addComponents }) => {
   const components = {
     ...getTypography()
   };
@@ -13,4 +13,4 @@ const typographyPlugin = plugin(({ addComponents }) => {
   });
 });
 
-module.exports = { typographyPlugin, getScreens, getColors };
+module.exports = { getTypographyPlugin, getScreens, getColors };
