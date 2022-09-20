@@ -1,15 +1,7 @@
-import Footer from '@/components/footer';
-import Header from '@/components/header';
-import Main from '@/components/main';
+import HomeContainer from '@/containers/home';
 
 const HomePage = () => {
-  return (
-    <div>
-      <Header />
-      <Main />
-      <Footer />
-    </div>
-  );
+  return <HomeContainer />;
 };
 
 export default HomePage;

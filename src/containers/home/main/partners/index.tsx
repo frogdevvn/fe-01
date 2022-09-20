@@ -1,3 +1,4 @@
+import InfoBox from '@/components/info-box';
 import AirbnbIcon from '@/public/assets/airbnb.svg';
 import FacebookIcon from '@/public/assets/facebook.svg';
 import GoogleIcon from '@/public/assets/google.svg';
@@ -16,15 +17,11 @@ const PartnerSection = () => {
   return (
     <section id="partners" className="pt-[60px] pb-[73px]">
       <div className="container mx-auto text-center">
-        <div className="mx-auto max-w-[411px] ">
-          <p className="typo-label font-bold uppercase text-green-100">
-            Partners
-          </p>
-          <h1 className="typo-heading-bold-1 mt-[16px]">Lorem Ipsum Dolor</h1>
-          <p className="typo-sub-heading mt-[16px]">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          </p>
-        </div>
+        <InfoBox
+          title="Partner"
+          subtitle="Lorem Ipsum Dolor"
+          description="Lorem ipsum, dolor sit amet consectetur adipisicing elit."
+        ></InfoBox>
 
         <div className="mt-[55px] flex justify-between">
           {partnersIcon.map((icon, index) => {

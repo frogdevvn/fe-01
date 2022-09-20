@@ -1,3 +1,4 @@
+import InfoBox from '@/components/info-box';
 import Image from 'next/future/image';
 
 const teams = [
@@ -31,13 +32,11 @@ const TeamSection = () => {
   return (
     <section id="team">
       <div className="container mx-auto pt-[102px] pb-[54px] text-center">
-        <div className="mx-auto max-w-[411px] ">
-          <p className="typo-label font-bold uppercase text-green-100">Team</p>
-          <h1 className="typo-heading-bold-1 mt-[16px]">Our Talents</h1>
-          <p className="typo-sub-heading mt-[16px]">
-            Lorem ipsum, dolor sit amet consectetur Suscipit nemo hic quos, ab,
-          </p>
-        </div>
+        <InfoBox
+          title="Team"
+          subtitle="Our Talents"
+          description="Lorem ipsum, dolor sit amet consectetur Suscipit nemo hic quos, ab,"
+        ></InfoBox>
 
         <div className="mt-[45px] flex justify-between">
           {teams.map((member, index) => {
