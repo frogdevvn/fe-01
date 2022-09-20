@@ -67,7 +67,6 @@ const getTypography = () => ({
   /* Typography/Body */
   '.typo-body': {
     fontFamily: 'Work Sans',
-    fontWeight: 700,
     fontSize: '15px',
     lineHeight: '18.75px'
   }

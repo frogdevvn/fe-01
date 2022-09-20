@@ -1,6 +1,12 @@
+import Header from '@/components/header';
+import Main from '@/components/main';
+
 const HomePage = () => {
   return (
-    <div className="typo-heading-bold-1">The quick brown fox jumps over</div>
+    <div>
+      <Header />
+      <Main />
+    </div>
   );
 };
 
